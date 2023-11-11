@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #a7ffeb;
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+.card{
+    background: white;
+    height: 520px;
+    width: 350px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.card .content{
+    color: #202020;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+.content .user{
+    height: 100px;
+    width: 100px;
+    background: #33ffcf;
+    border: 1px solid #1affc9;
+    border-radius: 50%;
+    margin: 10px auto;
+    transform: translateZ(50px);
+}
+.user{
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+}
+.content header{
+    margin: 10px 0;
+    font-size: 30px;
+    /* font-weight: 600; */
+    transform: translateZ(50px);
+}
+.content .follo-us{
+    font-size: 23px;
+    /* font-weight: 600; */
+    transform: translateZ(50px);
+}
+.content .icons{
+    margin: 10px 0 03px 0;
+    transform: translateZ(50px);
+}
+.icon a{
+    margin: 0 4px;
+}
+.icons a span{
+    height: 30px;
+    width: 30px;
+    background: #33ffcf;
+    border: 1px solid #1affc9;
+    line-height: 30px;
+    border-radius: 50%;
+    color: white;
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card - 3D Effect</title>
+    <link rel="stylesheet" href="prac1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="user"><span class="fa fa-user"></span></div>
+            <header>CodingNepal</header>
+            <div class="follo-us">Follow us on</div>
+            <div class="icons">
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-github"></span></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('body').mousemove(function(p){
+            let rotateX = -($(window).innerWidth()/2-p.pageX)/20
+            let rotateY = -($(window).innerHeight()/2-p.pageY)/10
+            $('.card').css("transform","rotateX("+rotateX+"deg) rotateY("+rotateY+"deg)")
+        });
+        $(document).mouseout(function(){
+            $('.card').css("transform","");
+        })
+    </script>
+
+</body>
+</html>
